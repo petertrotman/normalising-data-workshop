@@ -1,0 +1,25 @@
+{
+  "name": "normalising-data-workshop",
+  "version": "0.0.1",
+  "description": "Code for the normalising data workshop at the EdinburghJS meetup.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/petertrotman/normalising-data-workshop.git"
+  },
+  "keywords": [
+    "normalise",
+    "data",
+    "workshop",
+    "normalizr"
+  ],
+  "author": "Peter Trotman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/petertrotman/normalising-data-workshop/issues"
+  },
+  "homepage": "https://github.com/petertrotman/normalising-data-workshop#readme"
+}
