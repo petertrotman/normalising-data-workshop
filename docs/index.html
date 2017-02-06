@@ -4,17 +4,59 @@
     <title>EdinburghJS - Normalising Data</title>
     <link rel="stylesheet" href="css/reveal.css">
     <link rel="stylesheet" href="css/theme/white.css">
+    <script src="lib/js/head.min.js"></script>
   </head>
   <body>
     <div class="reveal">
       <div class="slides">
-        <section>Slide 1</section>
-        <section>Slide 2</section>
+        <section data-markdown="md/1-title.md"></section>
+        <section data-markdown="md/2-about-me.md"></section>
+        <section data-markdown="md/3-contents.md"></section>
+        <section data-markdown="md/4-typical-data.md"></section>
+        <section>
+          <section data-markdown="md/5-typical-operations.md"></section>
+          <section data-markdown="md/5-1-typical-read.md"></section>
+          <section data-markdown="md/5-2-typical-update.md"></section>
+          <section data-markdown="md/5-3-typical-immutable-update.md"></section>
+          <section data-markdown="md/5-4-typical-duplicate-update.md"></section>
+          <section data-markdown="md/5-5-typical-duplicate-immutable-update.md"></section>
+        </section>
+        <section data-markdown="md/6-summary-of-problems.md"></section>
+        <section data-markdown="md/7-normalised-data.md"></section>
+        <section>
+          <section data-markdown="md/8-normalised-operations.md"></section>
+          <section data-markdown="md/8-1-normalised-read.md"></section>
+          <section data-markdown="md/8-2-normalised-update.md"></section>
+          <section data-markdown="md/8-3-normalised-immutable-update.md"></section>
+        </section>
+        <section data-markdown="md/9-summary.md"></section>
+        <section data-markdown="md/10-references.md"></section>
       </div>
     </div>
     <script src="js/reveal.js"></script>
     <script>
-      Reveal.initialize();
+      Reveal.initialize({
+        dependencies: [
+          // Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+
+          // Interpret Markdown in <section> elements
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+
+          // Syntax highlight for <code> elements
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+
+          // Zoom in and out with Alt+click
+          { src: 'plugin/zoom-js/zoom.js', async: true },
+
+          // Speaker notes
+          { src: 'plugin/notes/notes.js', async: true },
+
+          // MathJax
+          { src: 'plugin/math/math.js', async: true }
+        ]
+      });
     </script>
   </body>
 </html>
