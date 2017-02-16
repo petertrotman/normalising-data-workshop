@@ -1,3 +1,6 @@
+<!-- .slide: class="lots-of-code" -->
+#### Typical API data
+
 ```JSON
 {
     "meetups": [

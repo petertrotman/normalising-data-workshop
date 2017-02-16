@@ -1,4 +1,5 @@
-# EdinburghJS
-## The 'why?' of Normalizr
 ## Normalising Data
-## Peter Trotman
+
+### Peter Trotman
+
+### EdinburghJS

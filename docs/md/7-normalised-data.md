@@ -1,4 +1,8 @@
-```js
+<!-- .slide: class="lots-of-code" -->
+
+#### Normalised data
+
+```JSON
 {
     "meetups": {
         "meetup1": {
