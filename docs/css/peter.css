@@ -1,3 +1,15 @@
+body {
+  background-color: #EEE;
+}
+
+.reveal {
+  color: #444;
+}
+
+.reveal h1, .reveal h2, .reveal h3, .reveal h4 {
+  color: #444;
+}
+
 .reveal pre code.hljs {
   max-height: 100%;
 }
